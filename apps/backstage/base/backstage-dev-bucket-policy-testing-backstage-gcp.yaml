@@ -19,7 +19,7 @@ spec:
 apiVersion: storage.gcp.crossplane.io/v1alpha1
 kind: BucketPolicyMember
 metadata:
-  name: backstage-dev-bucket-policy-testing-backstage-gcp
+  name: bucket-policy-testing-backstage
   labels:
     example: "true"
   annotations:
@@ -31,7 +31,7 @@ spec:
       name: bucket-policy-testing-backstage
     # member: serviceAccount:<my-sa-email>
     serviceAccountMemberRef:
-      name: ssharmajatin2132@gmail.com
+      name: 19bec036@smvdu.ac.in
     role: roles/storage.objectAdmin
   providerConfigRef:
     name: default   
@@ -41,7 +41,7 @@ spec:
 apiVersion: storage.gcp.crossplane.io/v1alpha1
 kind: BucketPolicy
 metadata:
-  name: backstage-dev-bucket-policy-testing-backstage-gcp
+  name: bucket-policy-testing-backstage
   labels:
     example: "true"
   annotations:
